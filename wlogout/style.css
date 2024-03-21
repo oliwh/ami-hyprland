@@ -1,0 +1,34 @@
+* {
+    background-image: none;
+    padding: 0px;
+    transition-duration: 0;
+}
+window {
+    font-family: PxPlus IBM VGA8;
+    font-size: 24pt;
+    color: #FFFFFF; /* text */
+    background-color: rgba(0,0,0,0);
+}
+
+button, button:hover {
+    border-radius: 0;
+    border-width: 0;
+    border-color: #AAAAAA;
+    border-style: solid;
+    color: #FFFFFF;
+	background-color: #0000AA;
+    box-shadow: 1em 0 #000000;
+}
+
+button:focus, button:active {
+	background-color: #000000;
+}
+
+#title {
+    background-color: #0000AA;
+    box-shadow: none;
+}
+#end {
+    background-color: #0000AA;
+    box-shadow: 1em 1em #000000, 1em 0 #000000;
+}

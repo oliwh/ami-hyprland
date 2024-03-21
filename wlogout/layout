@@ -1,0 +1,38 @@
+{
+    "label": "title",
+    "text" : " ┌─ Power Menu ──────────┐ "
+}
+{
+    "label" : "lock",
+    "action" : "~/.config/hypr/scripts/lock.sh",
+    "text" : " │ Lock                  │ ",
+    "keybind" : "l"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : " │ Reboot                │ ",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : " │ Shutdown              │ ",
+    "keybind" : "s"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "text" : " │ Logout                │ ",
+    "keybind" : "e"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl hibernate",
+    "text" : " │ Suspend               │ ",
+    "keybind" : "u"
+}
+{
+    "label" : "end",
+    "text" : " └───────────────────────┘ "
+}
