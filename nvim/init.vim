@@ -13,7 +13,7 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'dense-analysis/ale'
-Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim:h bufferline-configuration-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 
 
@@ -24,7 +24,7 @@ syntax enable
 
 
 " Set colour scheme
-colorscheme blue 
+colorscheme bios 
 
 " Lualine
 lua << END
@@ -100,5 +100,24 @@ vnoremap > >gv
 " Bufferline
 set termguicolors
 lua << EOF
-require("bufferline").setup{}
+require("bufferline").setup{
+    options = {
+        show_buffer_icons = false,
+        show_buffer_close_icons = false,
+        show_buffer_default_icon = false,
+        tab_size = 1,
+        separator_style = { '' , '' },
+        },
+    highlights = {
+        fill = {
+            fg = '#0000AA',
+            bg = '#0000AA'
+        },
+        background = {
+            fg = '#AAAAAA',
+            bg = '#0000AA',
+        }
+        
+    }
+}
 EOF
