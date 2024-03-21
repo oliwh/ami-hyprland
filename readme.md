@@ -11,4 +11,3 @@
 | kitty                                | terminal            |
 | fish                                 | shell               |
 | neovim                               | text editor         |
-| obsidian                             | note taking         |
