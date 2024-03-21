@@ -19,16 +19,14 @@
     "height": 30,
 
     "modules-left": [
-        "hyprland,/workspaces"
     ],
     "modules-center": [
+        "custom/title",
+        //"hyprland/window",
+        "battery"
+
     ],
     "modules-right": [
-        "network",
-        "battery",
-        "tray",
-        "clock#date",
-        "clock#time"
     ],
 
 
@@ -39,13 +37,13 @@
     "battery": {
         "interval": 10,
         "states": {
-            "warning": 30,
-            "critical": 15
+            "warning": 130,
+            "critical": 100
         },
         // Connected to AC
-        "format": "{capacity}%",
+        "format": "Charging: {capacity}%",
         // Not connected to AC
-        "format-discharging": "{icon}  {capacity}%",
+        "format-discharging": "Battery: {capacity}%",
         "tooltip": false
     },
 
@@ -61,45 +59,20 @@
       "tooltip-format": "{:%e %B %Y}"
     },
 
+    "hyprland/window": {
+        "format": "{title}",
+        "max-length": 120,
+        "rewrite": {
+            
+        }
+    },
 
     "memory": {
         "interval": 5,
         "format": "Mem: {}%", // Icon: memory
     },
 
-    "network": {
-        "interval": 5,
-        "format-wifi": "{essid} ({signalStrength}%)",
-        "format-disconnected": "Disconnected",
-	"on-click": "nm-tui"
-    },
-
-    "hyprland/window": {
-        "format": "{}",
-        "max-length": 120
-    },
-
-    "hyprland/workspaces": {
-        "all-outputs": false,
-        "disable-scroll": true,
-        "format": "{windows}",
-	"window-rewrite": {
-		"class<kitty>": "Terminal",
-		"class<LibreWolf>": "Browser",
-		"class<obsidian>": "Obsidian"
-		}
-        }
-    },
-
-    //"pulseaudio": {
-    //    //"scroll-step": 1,
-    //    "format": "Volume: {volume}%",
-    //    "on-click": "pavucontrol"
-    //},
-
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
+    "custom/title": {
+        "format": "BIOS SETUP UTILITY - "
     }
-
 }
