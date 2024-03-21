@@ -11,3 +11,7 @@
 | kitty                                | terminal            |
 | fish                                 | shell               |
 | neovim                               | text editor         |
+
+## Planned Additions:
+- [ ] Obsidian
+- [ ] Btop
