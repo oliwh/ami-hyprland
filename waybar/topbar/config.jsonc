@@ -37,8 +37,7 @@
     "battery": {
         "interval": 10,
         "states": {
-            "warning": 130,
-            "critical": 100
+            "critical": 10
         },
         // Connected to AC
         "format": "Charging: {capacity}%",
