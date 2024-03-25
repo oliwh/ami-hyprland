@@ -11,7 +11,12 @@
 | kitty                                | terminal            |
 | fish                                 | shell               |
 | neovim                               | text editor         |
+| btop                                 | resource monitor    |
+
+For necessary packages:
+`paru -Syu hyprland swaybg waybar pxplus_ibm_vga8`
 
 ## Planned Additions:
 - [ ] Obsidian
-- [ ] Btop
+- [x] Btop
+- [ ] GTK?
