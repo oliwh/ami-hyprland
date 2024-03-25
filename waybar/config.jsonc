@@ -3,7 +3,7 @@
   "height": 32,
   "modules-center": ["custom/name"],
   "custom/name": {
-    "format": "BOOT SETUP UTILITY",
+    "format": "BOOT SETUP UTILITY"
   }
 },
 {
@@ -11,8 +11,7 @@
   "height": 32,
   "modules-left": ["hyprland/workspaces"],
   "hyprland/workspaces": {
-    // "format": "{icon}",
-    "format": "{windows}",
+    "format": "{icon}",
     "persistent-workspaces": {
       "*": 6
     },
@@ -22,13 +21,13 @@
       "3": "Chipset",
       "4": "Boot",
       "5": "Security",
-      "6": "Exit",
+      "6": "Exit"
     }
-    "format": "{windows}",
+/*  "format": "{windows}",
     "window-rewrite": {
       "class<kitty>": "Terminal",
       "class<Chromium>": "Browser"
-    },
+    }*/
   }
 }
 ]
