@@ -1,0 +1,27 @@
+[{
+  "name": "top",
+  "height": 32,
+  "modules-center": ["custom/name"],
+  "custom/name": {
+    "format": "BOOT SETUP UTILITY",
+  }
+},
+{
+  "name": "top",
+  "height": 32,
+  "modules-left": ["hyprland/workspaces"],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "persistent-workspaces": {
+      "*": 6
+    },
+    "format-icons": {
+      "1": "Main",
+      "2": "Advanced",
+      "3": "Chipset",
+      "4": "Boot",
+      "5": "Security",
+      "6": "Exit",
+    }
+  }
+}]
