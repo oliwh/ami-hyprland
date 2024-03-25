@@ -1,0 +1,18 @@
+* {
+  font-family: "PxPlus IBM VGA8";
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+window#waybar {
+  background: #0000FF;
+}
+
+#workspaces button {
+  border: none;
+  border-radius: 0px;
+}
+
+#workspaces button.active {
+  background: #AAAAAA;
+}
