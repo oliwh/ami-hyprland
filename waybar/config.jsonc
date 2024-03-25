@@ -11,7 +11,8 @@
   "height": 32,
   "modules-left": ["hyprland/workspaces"],
   "hyprland/workspaces": {
-    "format": "{icon}",
+    // "format": "{icon}",
+    "format": "{windows}",
     "persistent-workspaces": {
       "*": 6
     },
@@ -23,5 +24,12 @@
       "5": "Security",
       "6": "Exit",
     }
+    "format": "{windows}",
+    "window-rewrite": {
+      "class<kitty>": "Terminal",
+      "class<Chromium>": "Browser"
+    },
   }
-}]
+}
+]
+
